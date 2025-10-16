@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <article data-testid="test-profile-card" class="card" aria-label="Profile card that flips to reveal details" tabindex="0">
+      
+      <div class="card__inner" id="cardInner">
+        
+        <section class="card__face card__face--front" aria-hidden="false">
+          <div class="card__media">
+            <figure class="avatar" aria-hidden="false">
+              <img src="Screenshot_20250924-225200_Instagram.jpg" alt="User Avatar" data-testid="test-user-avatar">
+            </figure>
+            <div class="badge">AJ</div>
+          </div>
+
+          <div class="card__body">
+            <header class="card__header">
+              <h2 data-testid="test-user-name">AJIMOLA</h2>
+              <time data-testid="test-user-time" aria-label="Current time in milliseconds"></time>
+            </header>
+
+            <p data-testid="test-user-bio" class="bio">
+              UX-focused Frontend developer crafting futuristic interfaces with performance and accessibility in mind.
+            </p>
+
+            <nav aria-label="Social links" data-testid="test-user-social-links" class="social">
+              <!--<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" class="pill">Twitter</a>-->
+              <a href="https://github.com/SOFTJOKER19" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" class="pill">GitHub</a>
+              <a href="https://www.linkedin.com/in/ajimola-afolabi-b9396a280/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" class="pill">LinkedIn</a>
+            </nav>
+
+            <div class="card__cta">
+              <button class="btn" id="flipBtn" aria-expanded="false" aria-controls="cardDetails">View Profile</button>
+            </div>
+          </div>
+        </section>
+
+        
+        <section class="card__face card__face--back" id="cardDetails" aria-hidden="true">
+          <div class="back__header">
+            <h3>About AJIMOLA</h3>
+            <button class="icon-btn" id="closeBtn" aria-label="Close profile">✕</button>
+          </div>
+
+          <div class="gallery">
+            <div class="gallery__main" id="galleryMain">
+              <img src="Screenshot_20250924-225236_Instagram.jpg" alt="Profile scene 1">
+            </div>
+            <div class="gallery__thumbs" id="galleryThumbs">
+              <button class="thumb" data-src="jim.png" aria-label="Show image 1"></button>
+              <button class="thumb" data-src="jprof.jpg" aria-label="Show image 2"></button>
+              <button class="thumb" data-src="Screenshot_20250924-225236_Instagram.jpg" aria-label="Show image 2"></button>
+            </div>
+          </div>
+
+          <section class="lists">
+            <div class="list">
+              <h4>Hobbies</h4>
+              <ul data-testid="test-user-hobbies">
+                <li>3D Design</li>
+                <li>Coding</li>
+                <li>Experimental UI</li>
+              </ul>
+            </div>
+
+            <div class="list">
+              <h4>Dislikes</h4>
+              <ul data-testid="test-user-dislikes">
+                <li>Cluttered UI</li>
+                <li>Slow load times</li>
+              </ul>
+            </div>
+          </section>
+
+          <footer class="back__footer">
+           
+          </footer>
+        </section>
+      </div>
+    </article>
+
+    <p class="hint">Click or press <kbd>Enter</kbd> on the card to flip it open. Press <kbd>Esc</kbd> to close.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

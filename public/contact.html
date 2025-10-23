@@ -170,6 +170,15 @@
         messageError.style.display = 'none';
       }
 
+
+      
+      // subject validation
+      if ( subjectInput.value.trim() === '') {
+        subjectError.style.display = 'block';
+        isValid = false;
+      } else {
+        subjectError.style.display = 'none';
+      }
       // If valid
       if (isValid) {
         alert('✅ Message sent successfully!');

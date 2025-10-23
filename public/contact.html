@@ -113,6 +113,12 @@
         <input type="email" id="email" name="email" placeholder="Your email" required>
         <p class="error" id="emailError">Please enter a valid email</p>
       </div>
+<div>
+        <label for="subject">Subject</label>
+        <input type="subject" id="subject" name="subject" placeholder="subject" required>
+        <p class="error" id="subjectError">Please enter a valid subject</p>
+      </div>
+
 
       <div>
         <label for="message">Message</label>
@@ -128,12 +134,13 @@
     const form = document.getElementById('contactForm');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
+    const subjectInput= document.getElementById('subject');
     const messageInput = document.getElementById('message');
 
     const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
     const messageError = document.getElementById('messageError');
-
+    const subjectError= document.getElementById('subjectError');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       let isValid = true;

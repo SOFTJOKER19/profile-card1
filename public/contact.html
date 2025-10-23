@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
-  <link src="style.css">
+
   <style>
     * {
       box-sizing: border-box;
@@ -96,6 +96,12 @@
         width: 90%;
       }
     }
+
+    
+.social{ display:flex; gap:0.5rem; margin:1rem 0; flex-wrap:wrap }
+.pill{ display:inline-block; padding:0.45rem 0.7rem; background:rgba(255,255,255,0.03); color:var(--white); border-radius:999px; text-decoration:none; font-weight:600; font-size:0.85rem; border:1px solid rgba(255,255,255,0.04); transition:transform 180ms ease, background 180ms ease; }
+.pill:focus, .pill:hover{ transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,0,0,0.6); outline:2px solid rgba(139,92,246,0.25); outline-offset:3px; }
+
   </style>
 </head>
 <body>

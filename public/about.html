@@ -74,11 +74,21 @@
         font-size: 1.7rem;
       }
     }
+       
+.social{ display:flex; gap:0.5rem; margin:1rem 0; flex-wrap:wrap }
+.pill{ display:inline-block; padding:0.45rem 0.7rem; background:rgba(255,255,255,0.03); color:var(--white); border-radius:999px; text-decoration:none; font-weight:600; font-size:0.85rem; border:1px solid rgba(255,255,255,0.04); transition:transform 180ms ease, background 180ms ease; }
+.pill:focus, .pill:hover{ transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,0,0,0.6); outline:2px solid rgba(139,92,246,0.25); outline-offset:3px; }
+
   </style>
 </head>
 <body>
 
   <h1>About Me </h1>
+<nav aria-label="Social links" data-testid="test-user-social-links" class="social">
+              <!--<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" class="pill">Twitter</a>-->
+             
+            <a href="index.html" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" class="pill">Home</a>
+            <a href="contact.html" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" class="pill">contact</a>
 
   <section class="about-grid">
 
